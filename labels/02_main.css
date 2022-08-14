@@ -1,0 +1,9 @@
+window {
+	background-color: orange;
+}
+
+label {
+	background-color: green;
+	color: white;
+	border-radius: 25%;
+}

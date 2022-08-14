@@ -1,0 +1,20 @@
+window {
+	background-color: magenta;
+}
+
+#catch-hover {
+	background-color: yellow;
+}
+
+#my-child {
+	background-color: orange;
+}
+
+#HOVER {
+	background-color: white;
+}
+
+#my-label {
+	font-size: 25px;
+	text-decoration-line: underline;
+}

@@ -1,0 +1,46 @@
+window {
+	background-color: orange;
+}
+
+label {
+	background-color: green;
+	color: white;
+	border-radius: 25%;
+}
+
+#entry-1 {
+	background-color: brown;
+	color: white;
+	font-size: 20px;
+}
+
+#entry-1 > progress {
+	background-color: blue;
+}
+
+#entry-1 > selection {
+	background-color: magenta;
+	color: yellow;
+}
+
+#entry-1 > image {
+	background-color: black;
+}
+
+#entry-1:focus {
+	background-color: white;
+}
+
+#entry-1:hover {
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+

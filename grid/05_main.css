@@ -1,0 +1,15 @@
+window {
+	background-color: magenta;
+}
+
+grid {
+	background-color: red;
+}
+
+#my-child {
+	background-color: orange;
+}
+
+#get-child {
+	background-color: white;
+}

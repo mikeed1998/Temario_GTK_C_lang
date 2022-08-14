@@ -1,0 +1,26 @@
+window {
+	background-color: magenta;
+}
+
+grid {
+	background-color: red;
+}
+
+#my-child {
+	background-color: orange;
+}
+
+#my-child:hover {
+	background-color: white;
+}
+
+#HOVER {
+	background-color: white;
+}
+
+#my-label {
+	font-size: 25px;
+	text-decoration-line: underline;
+}
+
+

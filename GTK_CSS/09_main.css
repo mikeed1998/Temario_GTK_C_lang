@@ -1,0 +1,25 @@
+button {
+	background-color: red;
+	color: white;
+}
+
+button:focus {
+	background-color: yellow;
+	color: red;
+}
+
+button:hover {
+	background-color: black;
+	color: magenta;
+}
+
+button:active {
+	background-color: green;
+	color: orange;
+}
+
+button:checked {
+	background-color: blue;
+	color: black;
+}
+

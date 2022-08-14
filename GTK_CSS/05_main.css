@@ -1,0 +1,15 @@
+window {
+	background-color: brown;
+}
+
+button {
+	background-color: green;
+}
+
+button:hover {
+	background-color: yellow;
+}
+
+button:active {
+	background-color: red;
+}

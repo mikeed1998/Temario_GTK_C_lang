@@ -1,0 +1,11 @@
+window {
+	background-color: magenta;
+}
+
+grid {
+	background-color: red;
+}
+
+#my-child-1 {
+	background-color: orange;
+}

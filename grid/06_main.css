@@ -1,0 +1,37 @@
+window {
+	background-color: magenta;
+}
+
+grid {
+	background-color: red;
+}
+
+#my-child {
+	background-color: orange;
+}
+
+#get-child {
+	background-color: white;
+}
+
+#my-label {
+	font-size: 25px;
+	text-decoration-line: underline;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#green {
+	background-color: green;
+}
+
+#brown {
+	background-color: brown;
+}
+
+#blue {
+	background-color: blue;
+}
+

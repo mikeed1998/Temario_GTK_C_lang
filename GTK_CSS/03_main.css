@@ -1,0 +1,11 @@
+window {
+	background-color: blue;
+}
+
+button {
+	background-color: red;
+	color: yellow;
+	border-color: black;
+	border-width: 5px;
+	border-radius: 100%;
+}

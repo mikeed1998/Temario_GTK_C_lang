@@ -1,0 +1,21 @@
+window {
+	background-color: blue;
+}
+
+button {
+	background-color: red;
+	color: yellow;
+	border-color: black;
+	border-width: 5px;
+	border-radius: 100%;
+}
+
+#mi-boton {
+	background-color: brown;
+	color: white;
+}
+
+.circular {
+	background-color: orange;
+	color: magenta;
+}
