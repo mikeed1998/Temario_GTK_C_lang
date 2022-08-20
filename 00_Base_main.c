@@ -5,33 +5,14 @@ void load_css(void);
 
 void main(void)
 {
-	GtkWidget *window; 
-	GtkWidget *spinButton;
+	GtkWidget *window;
 
 	gtk_init(NULL, NULL);
 	load_css();
 
-	window = createWindow(400, 300, "Spin button");
-	// **
-	spinButton = gtk_spin_button_new_with_range(0.0, 0.0, 1.0);
-	// gtk_widget_set_size_request(spinButton, 150, 50);
-	g_object_set(spinButton, "margin", 150, NULL);
-	gtk_container_add(GTK_CONTAINER(window), spinButton);
-	// **
-	gtk_spin_button_set_range(GTK_SPIN_BUTTON(spinButton), 0, 100);
-	gtk_spin_button_set_digits(GTK_SPIN_BUTTON(spinButton), 2);
-	gtk_spin_button_set_increments(GTK_SPIN_BUTTON(spinButton), 1.0, 10.0);
-	gtk_spin_button_set_numeric(GTK_SPIN_BUTTON(spinButton), TRUE);
-	gtk_spin_button_set_wrap(GTK_SPIN_BUTTON(spinButton), FALSE);
+	window = createWindow(400, 300, "Titulo");
 
-	if(gtk_spin_button_get_wrap(GTK_SPIN_BUTTON(spinButton)) == FALSE)
-	{
-		g_print("\nTRUE");
-	}
-	else
-	{
-		g_print("\nFALSE");
-	}
+	// 
 
 	gtk_widget_show_all(window);
 	gtk_main();
@@ -70,3 +51,6 @@ GtkWidget *createWindow(const gint width, const gint height, const gchar *titulo
 	gtk_container_set_border_width(GTK_CONTAINER(window), 25);
 	return window;
 }
+
+// CURSO TOTAL: 311 VIDEOS
+// VISTOS ACTUALMENTE: 77 VIDEOS
