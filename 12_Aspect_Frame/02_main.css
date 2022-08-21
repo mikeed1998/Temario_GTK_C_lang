@@ -1,0 +1,27 @@
+window {
+	background-color: #990000;
+}
+
+frame {
+	background-color: orange;
+	border: 5px solid;
+	border-color: red;
+	padding: 30px;
+}
+
+frame > border {
+	background-color: blue;
+	border: 5px solid;
+	color: brown;
+}
+
+frame > label {
+	background-color: green;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 30px;
+	border-radius: 50%;
+	border: 5px solid;
+	border-color: black;
+}
