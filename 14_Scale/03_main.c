@@ -6,13 +6,26 @@ void load_css(void);
 void main(void)
 {
 	GtkWidget *window;
+	GtkWidget *scale;
 
 	gtk_init(NULL, NULL);
 	load_css();
 
 	window = createWindow(400, 300, "Titulo");
 
-	// 
+	scale = gtk_scale_new_with_range(GTK_ORIENTATION_VERTICAL, 0.0, 10.0, 1.0);
+	gtk_container_add(GTK_CONTAINER(window), scale);
+
+	// Set inverted
+	gtk_range_set_inverted(GTK_RANGE(scale), TRUE);
+	// Set value
+	gtk_range_set_value(GTK_RANGE(scale), 5.0);
+	// Set increments
+	gtk_range_set_increments(GTK_RANGE(scale), 1.0, 2.0);
+	// Set range
+	gtk_range_set_range(GTK_RANGE(scale), 1.0, 4.0);
+	// Set flippable
+	gtk_range_set_flippable(GTK_RANGE(scale), TRUE);
 
 	gtk_widget_show_all(window);
 	gtk_main();
@@ -52,6 +65,3 @@ GtkWidget *createWindow(const gint width, const gint height, const gchar *titulo
 	return window;
 }
 
-// CURSO TOTAL: 311 VIDEOS
-// VISTOS ACTUALMENTE: 77 VIDEOS
-// gcc `pkg-config gtk+-3.0 --cflags` programa.c -o nombre_ejecutable `pkg-config gtk+-3.0 --libs`

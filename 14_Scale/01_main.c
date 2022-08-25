@@ -6,13 +6,25 @@ void load_css(void);
 void main(void)
 {
 	GtkWidget *window;
+	GtkAdjustment *adjustment;
+	GtkWidget *scale;
 
 	gtk_init(NULL, NULL);
 	load_css();
 
 	window = createWindow(400, 300, "Titulo");
 
-	// 
+	adjustment = gtk_adjustment_new(0.0, 0.0, 10.0, 1.0, 2.0, 0.0);
+
+	scale = gtk_scale_new(GTK_ORIENTATION_HORIZONTAL, adjustment);
+	gtk_container_add(GTK_CONTAINER(window), scale);
+
+	// Set the drag value option
+	gtk_scale_set_draw_value(GTK_SCALE(scale), TRUE);
+	// Set the position of the value
+	gtk_scale_set_value_pos(GTK_SCALE(scale), GTK_POS_TOP);
+	// Set digits .000
+	gtk_scale_set_digits(GTK_SCALE(scale), 3);
 
 	gtk_widget_show_all(window);
 	gtk_main();
@@ -51,7 +63,3 @@ GtkWidget *createWindow(const gint width, const gint height, const gchar *titulo
 	gtk_container_set_border_width(GTK_CONTAINER(window), 25);
 	return window;
 }
-
-// CURSO TOTAL: 311 VIDEOS
-// VISTOS ACTUALMENTE: 77 VIDEOS
-// gcc `pkg-config gtk+-3.0 --cflags` programa.c -o nombre_ejecutable `pkg-config gtk+-3.0 --libs`

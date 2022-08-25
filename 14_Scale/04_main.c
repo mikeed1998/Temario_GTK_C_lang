@@ -6,13 +6,33 @@ void load_css(void);
 void main(void)
 {
 	GtkWidget *window;
+	GtkWidget *scale;
 
 	gtk_init(NULL, NULL);
 	load_css();
 
 	window = createWindow(400, 300, "Titulo");
 
-	// 
+	scale = gtk_scale_new_with_range(GTK_ORIENTATION_HORIZONTAL, 0.0, 10.0, 1.0);
+	gtk_container_add(GTK_CONTAINER(window), scale);
+
+	// Set flippable
+	if(gtk_widget_get_direction(scale) == GTK_TEXT_DIR_LTR)
+	{
+		gtk_widget_set_direction(scale, GTK_TEXT_DIR_LTR);
+		g_print("The text is now Right-to-Left\n");
+	}
+
+	gtk_range_set_flippable(GTK_RANGE(scale), TRUE);
+
+	if(gtk_widget_get_direction(scale) == GTK_TEXT_DIR_LTR)
+	{
+		g_print("The text is now Right-to-Left\n");
+	}
+	else
+	{
+		g_print("NU, the text is Left-to-Right\n");
+	}
 
 	gtk_widget_show_all(window);
 	gtk_main();
@@ -52,6 +72,4 @@ GtkWidget *createWindow(const gint width, const gint height, const gchar *titulo
 	return window;
 }
 
-// CURSO TOTAL: 311 VIDEOS
-// VISTOS ACTUALMENTE: 77 VIDEOS
-// gcc `pkg-config gtk+-3.0 --cflags` programa.c -o nombre_ejecutable `pkg-config gtk+-3.0 --libs`
+
