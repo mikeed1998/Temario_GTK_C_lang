@@ -1,0 +1,71 @@
+window {
+	background-color: green;
+}
+
+/*
+scale marks.top {
+	background-color: orange;
+}
+
+scale marks.bottom {
+	background-color: white;
+}
+*/
+
+scale slider {
+	background-color: blue;
+}
+
+scale slider:focus {
+	background-color: red;
+}
+
+scale slider:hover {
+	background-color: orange;
+}
+
+scale slider:active {
+	background-color: black;
+}
+
+scale value {
+	background-color: red;
+	color: yellow;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+scale mark > label {
+	background-color: blue;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+scale mark > indicator {
+	color: black;
+}
+
+scale > contents > trough {
+	background-color: blue;
+}
+
+scale > contents > trough > hightlight {
+	background-color: blue;
+}
+
+/*
+scale {
+	background-color: orange;
+}
+
+scale:focus {
+	background-color: red;
+}
+
+scale:hover {
+	background-color: brown;
+}
+*/
+
+
