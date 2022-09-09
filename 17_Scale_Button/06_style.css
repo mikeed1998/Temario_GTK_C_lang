@@ -1,0 +1,24 @@
+window {
+	background-color: orange;
+}
+
+#my-scale-button {
+	background-color: red;
+	border: 2px solid black;
+}
+
+#my-scale-button:hover {
+	background-color: green;
+	border: 2px solid black;
+}
+
+.scale-popup scale {
+	background-color: magenta;
+}
+
+scale slider {
+	background-color: red;
+	color: yellow;
+}
+
+

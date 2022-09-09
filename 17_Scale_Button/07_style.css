@@ -1,0 +1,48 @@
+window {
+	background-color: orange;
+}
+
+#my-scale-button {
+	background-color: red;
+	border: 2px solid black;
+}
+
+#my-scale-button:hover {
+	background-color: green;
+	border: 2px solid black;
+}
+
+.scale-popup {
+	background-color: brown;
+	border: 2px solid black;
+}
+
+.scale-popup scale {
+	background-color: magenta;
+}
+
+.scale-popup scale slider {
+	background-color: red;
+	color: yellow;
+}
+
+.scale-popup scale > contents > trough {
+	background-color: blue;
+}
+
+.scale-popup scale > contents > trough > highlight {
+	background-color: blue;
+}
+
+.image-button {
+	background-color: yellow;
+	color: red;
+}
+
+.flat {
+	background-color: magenta;
+	color: yellow;
+}
+
+
+
