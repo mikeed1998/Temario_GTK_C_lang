@@ -1,0 +1,28 @@
+window {
+	background-color: green;
+}
+
+.linkButton {
+	background-color: orange;
+}
+
+.linkButton:hover {
+	background-color: magenta;
+}
+
+.linkButton > label {
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+}
+
+#enter_linkbutton > label {
+	margin: 5px;
+	background-color: yellow;
+	color: red;
+}
+
+#leave_linkbutton > label {
+	background-color: white;
+	color: aqua;
+}
